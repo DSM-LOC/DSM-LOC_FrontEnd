@@ -3,6 +3,8 @@ import pictures from "../../utils/assets/image/pictures.png";
 import people from "../../utils/assets/image/people.png";
 import calendar from "../../utils/assets/image/calendar.png";
 import plus from "../../utils/assets/image/plus.png";
+import publics from "../../utils/assets/image/publics.svg";
+import privates from "../../utils/assets/image/privates.svg";
 
 export default function CreatePost() {
   return (
@@ -27,6 +29,16 @@ export default function CreatePost() {
                   <p>기간 선택</p>
                 </div>
               </FirstItem>
+              <SecondItem>
+                <div id="publics">
+                  <img src={publics} alt="" />
+                  <p>공개</p>
+                </div>
+                <div id="privates">
+                  <img src={privates} alt="" />
+                  <p>비공개</p>
+                </div>
+              </SecondItem>
             </Choice>
 
             <Plus>
@@ -129,16 +141,19 @@ const Post = styled.div`
 
 const Choice = styled.div`
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   div {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
   }
 `;
 
 const FirstItem = styled.div`
   width: 100%;
   gap: 20px;
+  cursor: pointer;
   p {
     font-size: 14px;
     font-weight: 600;
@@ -153,12 +168,54 @@ const FirstItem = styled.div`
   }
 `;
 
+const SecondItem = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  p {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  img {
+    width: 12px;
+  }
+  div {
+    width: 64px;
+    gap: 2px;
+    padding: 3.2px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #publics {
+    border-radius: 20px 0 0 20px;
+    border: #61a5d8 2px solid;
+    color: #61a5d8;
+    img {
+      color: #61a5d8;
+    }
+  }
+  #privates {
+    border-radius: 0 20px 20px 0;
+    border: #d9d9d9 2px solid;
+    color: #d9d9d9;
+    img {
+      color: #d9d9d9;
+    }
+  }
+`;
+
 const Plus = styled.div`
   width: 100%;
   gap: 4px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  cursor: pointer;
 
   img {
     width: 19px;
