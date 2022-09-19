@@ -1,10 +1,9 @@
-import Header from "components/router/header";
-import React from "react";
+import Router from "router";
 
 function App() {
   return (
     <div>
-      <Header />
+      <Router />
     </div>
   );
 }
