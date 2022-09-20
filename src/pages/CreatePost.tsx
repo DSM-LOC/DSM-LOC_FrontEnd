@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import pictures from "../../utils/assets/image/pictures.png";
-import people from "../../utils/assets/image/people.png";
-import calendar from "../../utils/assets/image/calendar.png";
-import plus from "../../utils/assets/image/plus.png";
-import publics from "../../utils/assets/image/publics.svg";
-import privates from "../../utils/assets/image/privates.svg";
+import pictures from "assets/image/pictures.png";
+import people from "assets/image/people.png";
+import calendar from "assets/image/calendar.png";
+import plus from "assets/image/plus.png";
+import publics from "assets/image/publics.svg";
+import privates from "assets/image/privates.svg";
 
 export default function CreatePost() {
   return (
