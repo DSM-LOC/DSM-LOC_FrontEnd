@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import LogoImg from "assets/image/logo.svg";
+import LogoImg from "assets/image/common/logo.svg";
 
 const Header = () => {
   return (

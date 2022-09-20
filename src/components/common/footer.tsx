@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import githubImg from "assets/image/github.svg";
-import footerLogoImg from "assets/image/footerLogo.png";
+import githubImg from "assets/image/common/github.svg";
+import footerLogoImg from "assets/image/common/footerLogo.png";
 
 const Footer = () => {
   return (
