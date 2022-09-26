@@ -1,5 +1,8 @@
+import Member from "pages/Member";
+
+
 const Router = () => {
-  return <></>;
+  return <Member />
 };
 
 export default Router;
